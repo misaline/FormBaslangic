@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form ve Elemanları</title>
+    <link rel="stylesheet" href="main.css ">
+</head>
+
+<body>
+    <form action="">
+        <!--action backende göndermek için kullanacağız-->
+        <div>
+            <label for="ad">Adı Soyadı</label>
+            <input name="ad" id="ad" type="text" required />
+            <!--required zorunlu alan olması için kullanılır. name özelliği backende giderken bilgi isimleri için kullanılır -->
+
+        </div>
+        <div>
+            <label for="tel">Telefon</label>
+            <input name="tel" id="tel" type="tel" required />
+
+        </div>
+        <div>
+            <label for="email">Mail</label>
+            <input name="email" id="mail" type="email" required />
+
+        </div>
+        <div>
+
+            <label for="mesaj">Mesaj</label>
+            <textarea name="mesaj" id="mesaj" rows="3"></textarea>
+
+        </div>
+        <div>
+            <label for="sehir">Şehir</label>
+            <select name="sehr" id="sehir">
+                <option value="">İstanbul</option>
+                <option value="">İzmir</option>
+                <option value="">Bursa</option>
+                <option value="">Eskişehir</option>
+
+            </select>
+        </div>
+
+        <div>
+            <label for="renk">Sevdiğiniz Renk</label>
+            <input type="radio" name="renk" value="kirmizi"> Kırmızı
+            <!--name özelliği tek radio buton seçebilmek için yaptık-->
+            <input type="radio" name="renk" value="mavi"> Mavi
+            <input type="radio" name="renk" value="pembe"> Pembe
+
+        </div>
+
+        <div class="buttons">
+            <button type="reset">Sıfırla</button>
+            <button type="submit">Gönder</button> <!-- submit action a eklediğimiz linke gönderir-->
+
+        </div>
+    </form>
+
+</body>
+
+</html>
