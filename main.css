@@ -21,17 +21,13 @@ form {
 img {
     padding: 60px;
     padding-top: 110px;
-
-}
-
-.ikinci {
     opacity: 0;
+
 }
 
-.ikinci:hover {
+img:hover {
     opacity: 1;
 }
-
 
 .kutu1 {
     display: grid;
