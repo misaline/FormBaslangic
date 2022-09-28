@@ -1,6 +1,53 @@
-label {
-    display: block;
-    margin-top: 20px;
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(216, 189, 235);
+}
+
+.b1 {
+    border: 15px inset rgb(103, 10, 78);
+    ;
+}
+
+form {
+    padding: 48px;
+    width: 260px;
+    margin-left: 500px;
+
+}
+
+
+img {
+    padding: 60px;
+    padding-top: 110px;
+
+}
+
+.ikinci {
+    opacity: 0;
+}
+
+.ikinci:hover {
+    opacity: 1;
+}
+
+
+.kutu1 {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-row>label {
+    display: inline-block;
+    margin-bottom: 6px;
+    /*label ile textler arası boşluk*/
+
 }
 
 input[type="text"],
@@ -8,9 +55,80 @@ input[type="tel"],
 input[type="email"],
 select,
 textarea {
-    width: 260px;
+    width: 100%;
+    border-radius: 5px;
+    height: 42px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    /*kutuların borderı*/
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: inherit;
+    /*üst kapsayıcı neyse o olacak*/
+    font-family: inherit;
+    background-color: rgba(249, 161, 235, 0.381);
 }
 
-.buttons {
+select {
+    width: 290px;
+}
+
+
+/*koduu çalıştırdığımız anda hiçbir veri girmededen textlerde gözükecek yazılar için stil ayarlama*/
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: rgba(0, 0, 0, 0.397);
+}
+
+:focus {
+    outline: 2px solid rgba(33, 170, 234, 0.884);
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+
+    border-color: rgba(33, 170, 234, 0.884);
+
+}
+
+textarea {
+    height: 60px;
+    padding: 15px;
+    min-height: 42px;
+    min-width: 100px;
+    max-height: 200px;
+    resize: vertical;
+    /*genişliği zadece dikeyde uzatacak*/
+
+}
+
+.radio-container label+label {
+    margin-left: 10px;
+}
+
+button {
+    display: inline-block;
+    border: 0;
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-left: 25px;
     margin-top: 20px;
+    border: 1px solid white;
+
+
+
+}
+
+button[type="submit"] {
+    background-color: rgb(23, 102, 114);
+    color: rgb(255, 255, 255);
+
+
+
 }
